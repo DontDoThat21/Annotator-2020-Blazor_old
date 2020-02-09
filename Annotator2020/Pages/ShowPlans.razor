@@ -1,13 +1,31 @@
 ﻿@page "/showplans"
 
-<h2>Ready for your selection.</h2>
-<label>Show Year:</label>
-<select name="showPlans">
-    <option value="show plans">show plans</option>
-    <option value="test">test</option>
-</select>
-<label>Show Year:</label>
-<select name="client">
-    <option value="acura">Acura</option>
-    <option value="fca">FCA</option>
-</select>
+    <div>
+
+        <h2>Ready for your selection.</h2>
+        <label>Client:</label>
+        <select name="client">
+            @foreach (string s in Startup.array2)
+            {
+                <option value="@s">@s</option>
+            }
+        </select>
+        <label>Show Year:</label>
+        <select name="showPlans">
+        </select>
+
+        <button @onclick="Increment">YEET!</button>
+
+        <p>Count: @currentCounter</p>
+    </div>
+
+@code
+{
+    GetInventoryByClient work = new GetInventoryByClient(); // Constructor sets client arrays globally.
+
+    private int currentCounter = 0;
+    private void Increment()
+    {
+        currentCounter++;
+    }
+}

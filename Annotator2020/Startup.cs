@@ -15,6 +15,10 @@ namespace Annotator2020
 {
     public class Startup
     {
+        // OUR GLOBAL VARIABLES.
+        public static string[] array1;
+        public static string[] array2;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
