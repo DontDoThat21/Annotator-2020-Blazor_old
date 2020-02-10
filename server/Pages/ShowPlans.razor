@@ -15,17 +15,53 @@
         <div class="col-md-12 justify-content-around">
             <RadzenDropDownDataGrid Name="clientDescs" TValue="string" TextProperty="Clients" Data="@Startup.array2" Placeholder="Select Client...">
             </RadzenDropDownDataGrid>
-            <RadzenDropDownDataGrid Name="clientCunos" TValue="string" TextProperty="Client Numbers" Data="@ShowYears.Reverse()" Placeholder="Select Year...">
+            <RadzenDropDownDataGrid Name="clientCunos" TValue="int" TextProperty="Client Numbers" Data="@ShowYears.Reverse()" Placeholder="Select Year...">
             </RadzenDropDownDataGrid>
             <RadzenIcon Icon="description">
             </RadzenIcon>
         </div>
 
         <div class="col-md-6">
-             <h3>Action Board..</h3>
-        <RadzenCard Style="overflow:auto; height:500px;">
+            <h3>Action Board..</h3>
+            <RadzenCard Style="overflow:auto; height:500px;">
 
-        </RadzenCard>
+            </RadzenCard>
+            <Radzen.Blazor.RadzenButton Click="Increment"></Radzen.Blazor.RadzenButton>
+            <br />
+            <Radzen.Blazor.RadzenCheckBoxList TValue="string"></Radzen.Blazor.RadzenCheckBoxList>
+            <br />
+            <Radzen.Blazor.RadzenCompareValidator></Radzen.Blazor.RadzenCompareValidator>
+            <br />
+            <Radzen.Blazor.RadzenEmailValidator></Radzen.Blazor.RadzenEmailValidator>
+            <br />
+            <Radzen.Blazor.RadzenDatePicker TValue="DateTime"></Radzen.Blazor.RadzenDatePicker>
+            <br />
+            <Radzen.Blazor.RadzenPassword></Radzen.Blazor.RadzenPassword>
+            <br />
+            <Radzen.Blazor.RadzenNumeric TValue="int" Max="10" Value="@currentCounter" ValueChanged="Increment"></Radzen.Blazor.RadzenNumeric>
+            <br />
+            <Radzen.Blazor.RadzenProgressBar Value="@currentCounter"></Radzen.Blazor.RadzenProgressBar>
+            <br />
+            <Radzen.Blazor.RadzenSelectBar TValue="string"></Radzen.Blazor.RadzenSelectBar>
+            <br />
+            <Radzen.Blazor.RadzenRating Value="@currentCounter"></Radzen.Blazor.RadzenRating>
+            <br />
+            <Radzen.Blazor.RadzenSidebarToggle></Radzen.Blazor.RadzenSidebarToggle>
+            <br />
+            <Radzen.Blazor.RadzenSteps></Radzen.Blazor.RadzenSteps>
+            <br />
+            <Radzen.Blazor.RadzenTree></Radzen.Blazor.RadzenTree>
+            <br />
+            <Radzen.Blazor.RadzenProfileMenu></Radzen.Blazor.RadzenProfileMenu>
+            <br />
+            <Radzen.Blazor.RadzenAccordion></Radzen.Blazor.RadzenAccordion>
+            <br />
+            <Radzen.Blazor.RadzenNumericRangeValidator></Radzen.Blazor.RadzenNumericRangeValidator>
+            <br />
+            <RadzenNumericRangeValidator></RadzenNumericRangeValidator>
+            <br />
+            <p>Counter: @currentCounter</p>
+
         </div>
     </ChildContent>
 </RadzenContent>
