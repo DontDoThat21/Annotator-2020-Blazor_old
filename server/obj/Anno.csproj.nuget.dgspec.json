@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tylor\\source\\repos\\Annotator-2020-Blazor\\server\\Anno.csproj": {}
+    "C:\\Users\\ttrub\\Source\\Repos\\DontDoThat21\\Annotator-2020-Blazor\\server\\Anno.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tylor\\source\\repos\\Annotator-2020-Blazor\\server\\Anno.csproj": {
+    "C:\\Users\\ttrub\\Source\\Repos\\DontDoThat21\\Annotator-2020-Blazor\\server\\Anno.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tylor\\source\\repos\\Annotator-2020-Blazor\\server\\Anno.csproj",
+        "projectUniqueName": "C:\\Users\\ttrub\\Source\\Repos\\DontDoThat21\\Annotator-2020-Blazor\\server\\Anno.csproj",
         "projectName": "Anno",
-        "projectPath": "C:\\Users\\Tylor\\source\\repos\\Annotator-2020-Blazor\\server\\Anno.csproj",
-        "packagesPath": "C:\\Users\\Tylor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tylor\\source\\repos\\Annotator-2020-Blazor\\server\\obj\\",
+        "projectPath": "C:\\Users\\ttrub\\Source\\Repos\\DontDoThat21\\Annotator-2020-Blazor\\server\\Anno.csproj",
+        "packagesPath": "C:\\Users\\ttrub\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ttrub\\Source\\Repos\\DontDoThat21\\Annotator-2020-Blazor\\server\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tylor\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ttrub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
