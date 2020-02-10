@@ -18,11 +18,12 @@ namespace Annotator2020
             Response();
         }
         
-        public async Task Response()
+        public void Response()
         {
             GetInventoryClientList.GetInventoryClientListSoapClient client =
                 new GetInventoryClientList.GetInventoryClientListSoapClient(0);
-            responseGlobal = await client.GetClientListAsync(0);
+            //responseGlobal = await client.GetClientListAsync(0);
+            responseGlobal = client.GetClientListAsync(0).Result;
 
             List<string> tempCunos = new List<string>();
             List<string> tempDescs = new List<string>();

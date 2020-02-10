@@ -4,24 +4,36 @@
 
         <h2>Ready for your selection.</h2>
         <label>Client:</label>
-        <select name="client">
+        <select name="client" @onclick="SelectShowPlan">
             @foreach (string s in Startup.array2)
             {
                 <option value="@s">@s</option>
             }
         </select>
         <label>Show Year:</label>
-        <select name="showPlans">
+        <select name="showPlans" @onclick="SelectShowPlan">
+            @for (int i = 14; i > -1; i--)
+            {
+                <option value="@DateTime.Now.Year - i + 1">@(DateTime.Now.Year - i + 1)</option>
+                // If it's 2021, this does 2021-(15+1) aka 2005. It does +1, so includes 2022.. next year!
+            }            
         </select>
 
-        <button @onclick="Increment">YEET!</button>
 
-        <p>Count: @currentCounter</p>
+        <button @onclick="Increment">Debug</button>
+
+        <p>Current: @currentCounter</p>
+
     </div>
 
 @code
 {
     GetInventoryByClient work = new GetInventoryByClient(); // Constructor sets client arrays globally.
+
+    private void SelectShowPlan()
+    {
+        
+    }
 
     private int currentCounter = 0;
     private void Increment()
