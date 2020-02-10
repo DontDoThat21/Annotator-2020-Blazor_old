@@ -15,7 +15,7 @@
         <div class="col-md-12 justify-content-around">
             <RadzenDropDownDataGrid Name="clientDescs" TValue="string" TextProperty="Clients" Data="@Startup.array2" Placeholder="Select Client...">
             </RadzenDropDownDataGrid>
-            <RadzenDropDownDataGrid Name="clientCunos" TValue="string" TextProperty="Client Numbers" Data="@ShowYears" Placeholder="Select Year...">
+            <RadzenDropDownDataGrid Name="clientCunos" TValue="string" TextProperty="Client Numbers" Data="@ShowYears.Reverse()" Placeholder="Select Year...">
             </RadzenDropDownDataGrid>
             <RadzenIcon Icon="description">
             </RadzenIcon>
