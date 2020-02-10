@@ -1,0 +1,53 @@
+﻿@inherits Anno.Layouts.BlazorNavLayoutComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using Anno.Models.Sample
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+  <ChildContent>
+    <div class="row justify-content-start align-items-center">
+      <div class="col-md-6 d-flex align-items-center">
+        <RadzenSidebarToggle>
+        </RadzenSidebarToggle>
+        <RadzenLabel Text="Annotator 2020">
+        </RadzenLabel>
+      </div>
+      <div class="col-md-6 text-lg-right">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenMenu>
+          <ChildContent>
+            <RadzenMenuItem Text="ShowPlans" Path="show-plans">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Engineering Drawings" Path="engineering-drawings">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Orders" Path="orders">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Order Details" Path="order-details">
+            </RadzenMenuItem>
+            <RadzenMenuItem Text="Products" Path="products">
+            </RadzenMenuItem>
+          </ChildContent>
+        </RadzenMenu>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0">
+  <ChildContent>
+    <RadzenContentContainer Name="main">
+    @Body
+    </RadzenContentContainer>
+  </ChildContent>
+</RadzenBody>
+<RadzenFooter>
+  <ChildContent>
+    <RadzenLabel Text="Anno, Copyright Ⓒ 2020">
+    </RadzenLabel>
+  </ChildContent>
+</RadzenFooter>

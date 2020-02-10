@@ -1,0 +1,35 @@
+﻿@page "/orders"
+@layout MainLayout
+@inherits Anno.Pages.OrdersComponent
+
+@using Radzen
+@using Radzen.Blazor
+@using Anno.Models.Sample
+<RadzenContent Container="main">
+  <ChildContent>
+    <RadzenHeading Size="H1" Text="Orders">
+    </RadzenHeading>
+    <div class="row">
+      <div class="col-md-12">
+        <RadzenButton Icon="add_circle_outline" style="margin-bottom: 10px" Text="Add" Click="@Button0Click">
+        </RadzenButton>
+        <RadzenGrid @ref="grid0" AllowFiltering="true" AllowPaging="true" AllowSorting="true" Data="@getOrdersResult" Count="@getOrdersCount" TItem="Anno.Models.Sample.Order" LoadData="@Grid0LoadData" RowSelect="@Grid0RowSelect">
+          <Columns>
+            <RadzenGridColumn TItem="Anno.Models.Sample.Order" Context="annoModelsSampleOrder" Property="Id" Title="Id">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Anno.Models.Sample.Order" Context="annoModelsSampleOrder" Property="UserName" Title="User Name">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Anno.Models.Sample.Order" Context="annoModelsSampleOrder" Property="OrderDate" FormatString="{0:MM/dd/yyyy}" Title="Order Date">
+            </RadzenGridColumn>
+            <RadzenGridColumn TItem="Anno.Models.Sample.Order" Context="annoModelsSampleOrder" Filterable="false" Sortable="false" Width="70px" TextAlign="TextAlign.Center">
+              <Template Context="annoModelsSampleOrder">
+                <RadzenButton ButtonStyle="ButtonStyle.Danger" Icon="close" Size="ButtonSize.Small" Click="@((args) =>GridDeleteButtonClick(args, annoModelsSampleOrder))" @onclick:stopPropagation="true">
+                </RadzenButton>
+              </Template>
+            </RadzenGridColumn>
+          </Columns>
+        </RadzenGrid>
+      </div>
+    </div>
+  </ChildContent>
+</RadzenContent>

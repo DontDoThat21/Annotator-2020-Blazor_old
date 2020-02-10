@@ -1,0 +1,56 @@
+{
+  "access": "Everybody",
+  "components": [
+    {
+      "components": [
+        {
+          "class": "col-md-12",
+          "components": [
+            {
+              "name": "pageTitle",
+              "size": "H1",
+              "text": "Show Plans",
+              "type": "heading"
+            }
+          ],
+          "name": "col0",
+          "type": "col"
+        },
+        {
+          "class": "col-md-12 justify-content-around",
+          "components": [
+            {
+              "attributes": [
+                {
+                  "name": "yee",
+                  "value": "lol"
+                },
+                {
+                  "name": "adad",
+                  "value": "wqeqweqeq"
+                }
+              ],
+              "name": "dropdown0",
+              "type": "dropdown"
+            },
+            {
+              "name": "dropdown1",
+              "type": "dropdown"
+            },
+            {
+              "icon": "description",
+              "name": "icon0",
+              "type": "icon"
+            }
+          ],
+          "name": "col1",
+          "type": "col"
+        }
+      ],
+      "container": "main",
+      "type": "content"
+    }
+  ],
+  "layout": "Main",
+  "name": "ShowPlans"
+}
